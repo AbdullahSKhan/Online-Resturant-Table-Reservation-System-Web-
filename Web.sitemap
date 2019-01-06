@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="tafree"  description="">
+      <siteMapNode url="home.aspx" title="Home" description=""></siteMapNode>
+      <siteMapNode url="aboutus.aspx" title="About Us"  description="">
+        <siteMapNode url="ask.aspx" title="Abdullah Shaheen Khan"  description="" />
+        <siteMapNode url="uj.aspx" title="Uzair Javed"  description="" />
+      <siteMapNode url="ali.aspx" title="Riyan Khattak"  description="" />
+      <siteMapNode url="riyan.aspx" title="Ali Bilal Khanzada"  description="" />
+      </siteMapNode>
+      
+      
+      <siteMapNode url="reservation_master.aspx" title="Reserve A Table"  description="">
+        <siteMapNode url="kabab.aspx" title="Kabab Jees"  description="" />
+        <siteMapNode url="mac.aspx" title="MacDonalds"  description="" />
+        <siteMapNode url="kfc.aspx" title="KFC"  description="" />
+      </siteMapNode>
+      
+      
+      
+      <siteMapNode url="onlineorder_master.aspx" title="Online Food"  description="">
+        <siteMapNode url="macdonals.aspx" title="MacDonals"  description="" />
+        <siteMapNode url="street.aspx" title="14 Street Pizza"  description="" />
+        <siteMapNode url="bbq.aspx" title="BBQ Tonight"  description="" />
+        <siteMapNode url="pizza.aspx" title="Pizza Hut"  description="" />
+        <siteMapNode url="kabab2.aspx" title="Kabab Jees"  description="" />
+        <siteMapNode url="kfc2.aspx" title="KFC"  description="" />
+        <siteMapNode url="sub.aspx" title="Subway"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url="city.html" title="City"  description="">
+        <siteMapNode url="khi.aspx" title="Karachi"  description="" />
+        <siteMapNode url="lhr.aspx" title="Lahore"  description="" />
+        <siteMapNode url="isl.aspx" title="Islamabad"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url="setting.aspx" title="Settings"  description="">
+        <siteMapNode url="lang.aspx" title="Language"  description="" />
+        <siteMapNode url="theme.aspx" title="Theme"  description="" />
+
+      </siteMapNode>
+      <siteMapNode url="signup.aspx" title="SignUP"  description=""></siteMapNode>
+      <siteMapNode url="Log In.aspx" title="LogIn"  description=""></siteMapNode>
+          <siteMapNode url="logout.aspx" title="LogOut"  description=""></siteMapNode>
+    </siteMapNode>
+</siteMap>

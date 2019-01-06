@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#khi").mouseover(function () {
+                $("#khi").css("opacity","0.8")
+            });
+            $("#khi").mouseout(function () {
+                $("#khi").css("opacity", "1.0")
+            });
+            $("#lhr").mouseover(function () {
+                $("#lhr").css("opacity", "0.8")
+            });
+            $("#lhr").mouseout(function () {
+                $("#lhr").css("opacity", "1.0")
+            });
+            $("#isl").mouseover(function () {
+                $("#isl").css("opacity", "0.8")
+            });
+            $("#isl").mouseout(function () {
+                $("#isl").css("opacity", "1.0")
+            });
+        });
+
+
+    </script>
+    <style type="text/css">
+        #khi{
+            width:33.33%;
+            height:650px;
+            background-color:blue;
+            float:left;
+        }
+        #lhr {
+            width: 33.33%;
+            height: 650px;
+            background-color: gray;
+            float:left;
+        }
+
+        #isl {
+            width: 33.33%;
+            height: 650px;
+            background-color: lightgreen;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <div id="khi">
+
+        <a href="#"><img src="khi.jpg" width="100%" height="650px" /></a>  
+    </div>
+    <div id="lhr">
+        <a href="#"> <img src="lhr.jpg" width="100%" height="650px" /></a>  
+</div>
+    <div id="isl">
+        <a href="#"> <img src="isl.jpg" width="100%" height="650px" /></a>  
+</div>
+
+</body>
+</html>

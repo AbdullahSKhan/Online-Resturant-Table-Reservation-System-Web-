@@ -1,0 +1,39 @@
+﻿#dvlogo2{
+    width:15%;
+    height:150px;
+    background-color:yellow;
+    float:left;
+}
+#dvtop1{
+    width:85%;
+    height:100px;
+    background-color:blue;
+        float:left;
+}
+#dvtop3{
+    width:85%;
+    height:50px;
+    background-color:green;
+    float:left;
+}
+#slideshow4{
+    width:100%;
+    height:400px;
+    background-color:red;
+}
+#sidebar{
+    width:20%;
+    height:620px;
+    background-color:lightcoral;
+    float:left;
+}
+#main{
+    width:80%;
+    height:620px;   
+    float:left;
+}
+#footer{
+    width:100%;
+    height:200px;
+    background-color:gray;
+}

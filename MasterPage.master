@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs"  Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <%--<link href="masterpage1.css" rel="stylesheet" />--%>
+    <style type="text/css">
+
+        #dvlogo2{
+    width:15%;
+    height:150px;
+    background-color:yellow;
+    float:left;
+}
+#dvtop1{
+    width:85%;
+    height:100px;
+    background-color:blue;
+        float:left;
+        background:url("header.jpg");
+            background-size:1150px 100px;
+            background-repeat:no-repeat;
+
+ 
+}
+#dvtop3{
+    width:85%;
+    height:50px;
+    background-color:green;
+    float:left;
+
+        }
+#slideshow4{
+    width:100%;
+    height:400px;
+    background-color:black;
+}
+#sidebar{
+    width:20%;
+    height:700px;
+    background-color:lightcoral;
+    float:left;
+    background:url("sidebar.jpg");
+    background-repeat:no-repeat;
+    background-size:270px 700px;
+}
+#main{
+    width:80%;
+    height:620px;   
+    float:left;
+    /*background-color:purple;*/
+   
+}
+#footer{
+    width:100%;
+    height:700px;
+    /*background-color:gray;*/
+    
+}
+ #seeourself{
+       position:absolute;
+            width:100%;
+            height:400px;
+            background-color:gray;
+            z-index:1;
+
+
+    </style>
+
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+  
+        <div id="dvlogo2">
+              <img src="logo.png" width="200px" height="150px" />
+
+        </div>
+        <div id="dvtop1">
+                        <h1 style="text-align:center;position:absolute; left:600px">Eat Order Sleep</h1>
+                 <h1 style="text-align:center;position:absolute; left:600px">Eat Order Sleep</h1>   
+            
+           <a href="https://www.facebook.com/"><img  src="fb.png" align="right" width="40px" height="40px" /></a> 
+          <a href="https://pk.linkedin.com"><img src="linkdin.png" align="right" width="40px" height="40px" /></a>
+             <a href="https://www.instagram.com/?hl=en"> <img src="insta.png" align="right" width="40px" height="40px" /></a>
+            <asp:Label ID="Label1" runat="server" Text="SESSION" Font-Bold="True" Font-Size="XX-Large" Font-Underline="True" ForeColor="Black"></asp:Label> <br />     
+        </div>
+        <div id="dvtop3">
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource2" Orientation="Horizontal" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Large" Font-Strikeout="False" Font-Underline="False" ForeColor="#7C6F57" Height="50px" StaticSubMenuIndent="10px" Width="100%">
+                <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#F7F6F3" />
+                <DynamicSelectedStyle BackColor="#5D7B9D" />
+                <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#5D7B9D" />
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" ShowStartingNode="False" />
+        </div>
+        <div id="slideshow4">
+
+            <marquee scrollamount="10">
+               <img src="flame.jpg" width="900px" height="250px" />
+        <img src="food1.jpg" width="900px" height="250px"/>
+                   <img src="kabab.jpg" width="900px" height="250px"/>
+                   <img src="mac_logo2.jpg" width="900px" height="250px"/>
+                   <img src="mac_logo.jpg" width="900px" height="250px"/>
+                   <img src="matrix.jpg" width="900px" height="250px"/>
+      
+            </marquee>
+
+
+
+
+
+        </div>
+        <div id="sidebar">
+            <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" Font-Bold="True" Font-Size="Medium" Height="62px" ShowLines="True" Width="16px" ForeColor="Red">
+                <HoverNodeStyle BackColor="#FF6600" BorderColor="#FF6600" />
+            </asp:TreeView>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+        </div>
+        <div id="main">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  </asp:ContentPlaceHolder>
+            </div>    
+   <div id="footer"></div>
+         <div id="seeourself">
+            <img src="flame.jpg" width="100%" height="400px" style="position:absolute;z-index:-1;" />
+                <h1 style="text-align:center; color:white;">Since 2015<br />The Year We Gathered </h1>
+         
+                <!--<div style="width:13%; height:150px; background-color:green;position:relative;top:20px; left:200px;">ASK</div>
+                <div style="width:13%; height:150px; background-color:blue;position:relative;top:-130px; left:380px;">AB</div>
+                <div style="width:13%; height:150px; background-color:red;position:relative;top:-280px; left:750px;">UJ</div>
+                <div style="width:13%; height:150px; background-color:yellow;position:relative;top:-430px; left:930px;">RKS</div>-->
+         
+                <div style="width:13%; height:150px; background-color:green; float:left;margin-left:250px; margin-right:20px;">
+                    <img src="ask.jpg" width="180px" height="150px" />
+                </div>
+                <div style="width: 13%; height: 150px; background-color: blue; float:left; margin-right: 20px;">
+                    <img src="ali.jpg" width="180px" height="150px" />
+                </div>
+            <div style="width:13%; height:150px; background-color:red; float:left ;margin-left:100px;margin-right:20px;">
+                <img src="uzair.jpg" width="180px" height="150px" />
+            </div>
+                <div style="width:13%; height:150px; background-color:yellow; float:left">
+                    <img src="riyan.jpg" width="180px" height="150px" />
+                </div>
+            
+            <div style="width:100%;height:50px;margin-top:200px;">
+
+                <p style="text-align:center; color:white;">Well Yes! Somehow we Managed</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+

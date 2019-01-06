@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+    #container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color:black;
+        z-index: -1;
+    }
+
+    .video-size video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity:0.6;
+    }
+
+       #enter{
+           position:absolute;
+           width:30%;
+           height:200px;
+           left:500px;
+           top:200px;
+        z-index: 2;
+        background:url("welcome.png");
+        background-size:200px 200px;
+        background-repeat:no-repeat;
+     
+    }
+</style>
+</head>
+<body scroll="no" style="overflow: hidden">
+    <div id="container">
+
+        <div id="enter">
+            <!--<a href="introOptions.aspx"><p><img src="welcome.png" width="1316" height="607" id="enter" /> </p></a>-->   
+        </div>
+    
+        <div class="video-size">
+            <video autoplay loop>
+                <source src="video-desktop-2.mp4" type="video/mp4"> 
+            </video>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
